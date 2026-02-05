@@ -5,6 +5,18 @@
 
 - The test function takes one argument only t *testing.T
 
+## Setting up Example tests
+- The function must be also in a file that ends in _test.go
+  
+- The function name must follow this pattern "Example{NameOfFunction}" eg ExampleAdder
+
+- Output of function to be tested is written under comments within the Example function a format like this : 
+// Output: 6
+
+where 6 is the expected output of the function being test
+
+- Examples without output comments are useful for demonstrating code that cannot run as unit tests, such as that which accesses the network, while guaranteeing the example at least compiles.
+
 ## TDD cycle 
 1. Write a test
 

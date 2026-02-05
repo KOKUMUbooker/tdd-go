@@ -1,3 +1,14 @@
+## TDD cycle 
+1. Write a test
+
+2. Make the compiler pass
+
+3. Run the test, see that it fails and check the error message is meaningful
+
+4. Write enough code to make the test pass
+
+5. Refactor
+
 ## Requirements for testing in go
 - It needs to be in a file with a name like xxx_test.go
 
@@ -17,13 +28,6 @@ where 6 is the expected output of the function being test
 
 - Examples without output comments are useful for demonstrating code that cannot run as unit tests, such as that which accesses the network, while guaranteeing the example at least compiles.
 
-## TDD cycle 
-1. Write a test
-
-2. Make the compiler pass
-
-3. Run the test, see that it fails and check the error message is meaningful
-
-4. Write enough code to make the test pass
-
-5. Refactor
+## Runing tests
+$ go run -v     # v for verbose
+$ go test -cover
